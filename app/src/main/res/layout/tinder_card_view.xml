@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_heart"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/background_gradient_bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginBottom="75dp"
+            android:layout_gravity="bottom"
+            android:gravity="center|left"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/nameAgeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/locationNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="Accept"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="Reject"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_gravity="end"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
